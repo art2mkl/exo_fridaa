@@ -25,19 +25,15 @@ Retraiter les valeurs spécifiques à chaque banque (revenus annuels pour BNP vs
   
 
 # Dependencies 
-### OCR dependencies
-from PIL import Image       
-import Image         
-import pytesseract        
 
-from pdf2image import convert_from_path      
-import os      
-import cv2      
-import re        
-
-### Text analysis dependencies
-import pandas as pd      
-
-from fuzzysearch import find_near_matches     
-from fuzzywuzzy import fuzz    
-from fuzzywuzzy import process     
+Python==3.8
+Fuzzy==1.2.2
+fuzzysearch==0.7.3
+fuzzywuzzy==0.18.0
+ImageHash==4.2.1
+opencv-python==4.5.3.56
+pandas==1.3.2
+pdf2image==1.16.0
+Pillow==8.3.1
+pytesseract==0.3.8
+tesseract-ocr==0.0.1
