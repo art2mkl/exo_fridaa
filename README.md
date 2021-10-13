@@ -26,8 +26,8 @@
 6. Enregistrement de ces données dans une table 
   
 # Installations sur le systeme
-poppler
-tesseract OCR
+* poppler
+* tesseract OCR
 
 # Dependencies 
 Python==3.8
