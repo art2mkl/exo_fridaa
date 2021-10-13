@@ -1,17 +1,19 @@
 # Introduction
 * POC utilisant pytesseract et fuzzy match 
-* Transforme en string  données du PDF
+* Transforme en string les données du PDF
 * On capte les données à travers des mots clés
 * Fonctionnement limité sur des lignes et ne capte pas les données en colonnes 
 * **Certaines variables d'environnement sont à modifier dans l'init de la classe Extract_data_from_pdf.** Celles ci doivent correspondre à l'OS utilisé
-* Poppler path non nécessaire pour utilisateur linux  
+* Poppler path non nécessaire pour utilisateur linux
+* Fonctionnement limité sur un crédit parmi les crédits présents dans le document.  
 
 # Prochaines étapes :
-Capturer les tableaux directement avec l'OCR 
-Retraiter les valeurs spécifiques à chaque banque (revenus annuels pour BNP vs. revenus mensuels etc...)
+* Capturer les tableaux directement avec l'OCR 
+* Retraiter les valeurs spécifiques à chaque banque (revenus annuels pour BNP vs. revenus mensuels etc...)
+* Capturer plusieurs crédits par document
 
 # Fonctionnement :
-1. Chargmement de deux fichiers : 
+1. Chargement de deux fichiers : 
     * fichier pdf de données bancaires 
     * fichier excel de base de connaissance: Associe les noms des variables attendues au nom de ces variables dans les fichiers bancaires
 2. Transformation des données pdf en image (.JPG) et enregistrement de ces images dans un dossier 

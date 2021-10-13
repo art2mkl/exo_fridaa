@@ -2,7 +2,7 @@ import pandas as pd
 from fridaa_pkg.Extract_data_from_pdf import Extract_data_from_pdf
 
 knowledge_base = 'knowledge_base/alim_keywords.xlsx'
-pdf_file = 'pdf_files/caisse_epargne.pdf'
+pdf_file = 'pdf_files/CIC.pdf'
 results_path = 'results/'
 
 #Extract Data and save in xlsx file
