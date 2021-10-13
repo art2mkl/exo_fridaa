@@ -3,12 +3,12 @@
 * Transforme en string les données du PDF
 * On capte les données à travers des mots clés
 * Fonctionnement limité sur des lignes et ne capte pas les données en colonnes 
-* **Certaines variables d'environnement sont à modifier dans l'init de la classe Extract_data_from_pdf.** Celles ci doivent correspondre à l'OS utilisé
+* **Certaines variables d'environnement sont à modifier dans l'init de la classe Extract_data_from_pdf.** Celles ci doivent correspondre à l'OS utilisé : cf.installations (Poppler et Tesseract OCR)
 * Poppler path non nécessaire pour utilisateur linux
-* Fonctionnement limité sur un crédit parmi les crédits présents dans le document.  
+* Fonctionnement limité sur un crédit parmi les crédits présents dans le document.
 
 # Prochaines étapes :
-* Capturer les tableaux directement avec l'OCR 
+* Capturer les tableaux directement avec l'OCR
 * Retraiter les valeurs spécifiques à chaque banque (revenus annuels pour BNP vs. revenus mensuels etc...)
 * Capturer plusieurs crédits par document
 
@@ -25,9 +25,11 @@
 5. Capture de la données associée à ce mot clé
 6. Enregistrement de ces données dans une table 
   
+# Installations sur le systeme
+poppler
+tesseract OCR
 
 # Dependencies 
-
 Python==3.8
 Fuzzy==1.2.2
 fuzzysearch==0.7.3
